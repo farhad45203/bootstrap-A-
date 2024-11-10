@@ -1,10 +1,10 @@
-section {
-  padding-top: 80px;
-}
+/* for navbar */
 
 nav.navbar {
   min-height: 70px;
 }
+
+/* for carousel */
 
 #carouselExampleCaptions {
   padding-top: 70px !important;
@@ -26,4 +26,10 @@ nav.navbar {
 
 .carousel-caption {
   bottom: 20% !important;
+}
+
+/* for section */
+
+section {
+  padding-top: 80px;
 }
