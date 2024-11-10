@@ -1,0 +1,13 @@
+body {
+  padding-top: 70px;
+}
+
+nav.navbar {
+  min-height: 70px;
+}
+#heroCarousel .carousel-item {
+  height: 80vh; /* Adjust the height as needed */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
