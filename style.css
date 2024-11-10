@@ -1,13 +1,29 @@
-body {
-  padding-top: 70px;
+section {
+  padding-top: 80px;
 }
 
 nav.navbar {
   min-height: 70px;
 }
-#heroCarousel .carousel-item {
-  height: 80vh; /* Adjust the height as needed */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+#carouselExampleCaptions {
+  padding-top: 70px !important;
+  height: 80vh;
+  overflow: hidden;
+}
+
+#carouselExampleCaptions img {
+  max-height: 80vh;
+  min-height: 80vh;
+  object-fit: cover;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-caption {
+  bottom: 20% !important;
 }

@@ -17,6 +17,7 @@
     />
   </head>
   <body>
+    <!-- Header Section -->
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm fixed-top">
         <div class="container">
@@ -38,10 +39,10 @@
                 <a class="nav-link text-black" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black" href="#about">About</a>
+                <a class="nav-link text-black" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black" href="#services">Services</a>
+                <a class="nav-link text-black" href="#about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-black" href="#contact">Contact</a>
@@ -53,71 +54,90 @@
     </header>
 
     <!-- Carousel Section -->
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
       <div class="carousel-inner">
         <!-- Slide 1 -->
-        <div
-          class="carousel-item active"
-          style="
-            background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg');
-            background-size: cover;
-          "
-        >
-          <div
-            class="carousel-caption d-flex flex-column align-items-center justify-content-center"
-          >
-            <h1 class="display-4 text-white">Welcome to Our Site</h1>
-            <p class="lead text-white">
-              Discover amazing services tailored for you.
+        <div class="carousel-item active">
+          <img
+            src="https://img.freepik.com/free-vector/big-data-concept-background_52683-24459.jpg?t=st=1731267214~exp=1731270814~hmac=2ca70fee17c657c750ed66f9a3ecf6d1c697ff03cac710bb592ea83fd05860d9&w=1380"
+            class="d-block w-100 h-100"
+            alt="Slide 1"
+          />
+          <div class="carousel-caption">
+            <h5>Welcome to My Portfolio</h5>
+            <p>
+              Explore a collection of my projects and services tailored to bring
+              your ideas to life.
             </p>
-            <a href="#" class="btn btn-primary mt-3">Learn More</a>
+            <a href="#services" class="btn btn-primary mt-3">Discover More</a>
           </div>
         </div>
 
         <!-- Slide 2 -->
-        <div
-          class="carousel-item"
-          style="
-            background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg');
-            background-size: cover;
-          "
-        >
-          <div
-            class="carousel-caption d-flex flex-column align-items-center justify-content-center"
-          >
-            <h1 class="display-4 text-white">Our Services</h1>
-            <p class="lead text-white">
-              High-quality solutions designed for your needs.
+        <div class="carousel-item">
+          <img
+            src="https://img.freepik.com/free-vector/colorful-futuristic-background-with-shiny-particles_52683-42650.jpg?t=st=1731267101~exp=1731270701~hmac=086552219c3bd0db80cc7645975b2ce8f2ec5b51f3ab4790e9ee42c7757aaf5a&w=1380"
+            class="d-block w-100"
+            alt="Slide 2"
+          />
+          <div class="carousel-caption">
+            <h5>Reliable & Tailored Services</h5>
+            <p>
+              From website creation to custom design, I offer a range of
+              solutions to suit your unique needs.
             </p>
-            <a href="#" class="btn btn-primary mt-3">Explore Services</a>
+            <a href="#services" class="btn btn-primary mt-3">Learn More</a>
           </div>
         </div>
 
         <!-- Slide 3 -->
-        <div
-          class="carousel-item"
-          style="
-            background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg');
-            background-size: cover;
-          "
-        >
-          <div
-            class="carousel-caption d-flex flex-column align-items-center justify-content-center"
-          >
-            <h1 class="display-4 text-white">Get in Touch</h1>
-            <p class="lead text-white">
-              We are here to assist you with your questions.
+        <div class="carousel-item">
+          <img
+            src="https://img.freepik.com/free-vector/digital-global-connection-network-technology-background_1017-23324.jpg?t=st=1731267078~exp=1731270678~hmac=ef528fa8c00ff909b043c37babb292cb7089a4db322e375bd814805f6fe1ade3&w=1480"
+            class="d-block w-100"
+            alt="Slide 3"
+          />
+          <div class="carousel-caption">
+            <h5>Let's Work Together</h5>
+            <p>
+              Got a project or an idea? I’d love to hear from you. Reach out
+              today, and let’s start creating.
             </p>
-            <a href="#" class="btn btn-primary mt-3">Contact Us</a>
+            <a href="#contact" class="btn btn-primary mt-3">Contact Me</a>
           </div>
         </div>
       </div>
-
-      <!-- Carousel Controls -->
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#heroCarousel"
+        data-bs-target="#carouselExampleCaptions"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -126,7 +146,7 @@
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#heroCarousel"
+        data-bs-target="#carouselExampleCaptions"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -134,7 +154,8 @@
       </button>
     </div>
 
-    <div class="container my-5">
+    <!-- Services Section -->
+    <section id="services" class="container pb-5">
       <h2 class="text-center mb-4">My Services</h2>
       <p class="text-center mb-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sequi,
@@ -145,8 +166,8 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm border-0 h-100">
             <img
-              src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg"
-              class="card-img-top"
+              src="https://img.freepik.com/free-vector/hand-drawn-flat-design-api-illustration_23-2149365021.jpg?t=st=1731264664~exp=1731268264~hmac=f8345eedbe73411d9881b0e894623f1a766205865ebdc27ce1c8f3220ea88449&w=740"
+              class="card-img-top max-h-15"
               alt="Image 1"
             />
             <div class="card-body">
@@ -165,8 +186,8 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm border-0 h-100">
             <img
-              src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg"
-              class="card-img-top"
+              src="https://img.freepik.com/free-vector/flat-design-cms-digital-programs_23-2148790016.jpg?t=st=1731264716~exp=1731268316~hmac=4ad099e04477921981d8d0bd4194956834f124f683282d8e8d3f382a3075ae73&w=996"
+              class="card-img-top max-h-15"
               alt="Image 2"
             />
             <div class="card-body">
@@ -185,8 +206,8 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm border-0 h-100">
             <img
-              src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg"
-              class="card-img-top"
+              src="https://img.freepik.com/free-vector/shopping-with-technological-devices_23-2147654122.jpg?t=st=1731264762~exp=1731268362~hmac=114a18cf02248c767e8082eba47744b38b5ededd45271d3cac46fbc421f1f119&w=740"
+              class="card-img-top max-h-15"
               alt="Image 3"
             />
             <div class="card-body">
@@ -205,8 +226,8 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm border-0 h-100">
             <img
-              src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg"
-              class="card-img-top"
+              src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg?t=st=1731264786~exp=1731268386~hmac=c53723a1b71895c63c5548758bbf56857ac2c709909d51e0762a3321862b3a70&w=1380"
+              class="card-img-top max-h-15"
               alt="Image 4"
             />
             <div class="card-body">
@@ -225,7 +246,7 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm border-0 h-100">
             <img
-              src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg"
+              src="https://img.freepik.com/free-vector/colored-isometric-web-seo-composition-with-different-abstract-elements-notebook-illustration_1284-28865.jpg?t=st=1731264810~exp=1731268410~hmac=957c316d5fe2b042763dcd5de587d1e14874fc4adc5ae4aa0083cb2e4e48be0c&w=740"
               class="card-img-top"
               alt="Image 5"
             />
@@ -240,10 +261,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- About Section -->
-    <section class="py-5 bg-light">
+    <section id="about" class="pb-5 bg-light">
       <div class="container">
         <!-- Section Title -->
         <h2 class="text-center mb-5">About Us</h2>
@@ -253,7 +274,7 @@
           <!-- Left Column (Image) -->
           <div class="col-12 col-lg-6 mb-4 mb-lg-0">
             <img
-              src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg"
+              src="https://img.freepik.com/free-vector/selecting-team-concept-illustration_114360-5423.jpg?t=st=1731266832~exp=1731270432~hmac=3f7512c9840ece458490ae89cc383eb37d12d7ea250dad1f5c68cc6e68a611f3&w=740"
               alt="About Us Image"
               class="img-fluid rounded"
             />
@@ -281,7 +302,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="py-5 bg-light">
+    <section id="contact" class="pb-5 bg-light">
       <div class="container">
         <h2 class="text-center mb-4">Contact Us</h2>
         <p class="text-center mb-5">
@@ -290,46 +311,60 @@
           touch with me. Let's talk about how I can help bring your ideas to
           life!
         </p>
+        <!-- Grid Layout -->
+        <div class="row align-items-center">
+          <!-- Left Column (Image) -->
+          <div class="col-12 col-lg-6">
+            <!-- Contact Form -->
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
 
-        <!-- Contact Form -->
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              placeholder="Enter your name"
-              required
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  placeholder="Enter your message"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Right Column (Text) -->
+          <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+            <img
+              src="https://img.freepik.com/free-vector/contact-us-concept-illustration_114360-2299.jpg?t=st=1731267181~exp=1731270781~hmac=bf212b6ef374d370578ba3bf85306f46795ee1e2552bc3aee496d139ddf43d09&w=740"
+              alt="Contact Us Image"
+              class="img-fluid rounded"
             />
           </div>
-
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="Enter your email"
-              required
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea
-              class="form-control"
-              id="message"
-              rows="5"
-              placeholder="Enter your message"
-              required
-            ></textarea>
-          </div>
-
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </form>
+        </div>
       </div>
     </section>
 
@@ -341,6 +376,7 @@
         <!-- Social Media Links -->
         <div>
           <a
+            target="_blank"
             href="https://web.facebook.com/iammdfarhad"
             class="text-white mx-2 text-decoration-none"
             aria-label="Facebook"
@@ -348,6 +384,7 @@
             <i class="bi bi-facebook" style="font-size: 1.5rem"></i>
           </a>
           <a
+            target="_blank"
             href="https://x.com/farhad45203"
             class="text-white mx-2 text-decoration-none"
             aria-label="Twitter"
@@ -355,6 +392,7 @@
             <i class="bi bi-twitter" style="font-size: 1.5rem"></i>
           </a>
           <a
+            target="_blank"
             href="https://www.instagram.com/mdfarhad45203/"
             class="text-white mx-2 text-decoration-none"
             aria-label="Instagram"
@@ -362,6 +400,7 @@
             <i class="bi bi-instagram" style="font-size: 1.5rem"></i>
           </a>
           <a
+            target="_blank"
             href="https://www.linkedin.com/in/md-farhad-a84421337"
             class="text-white mx-2 text-decoration-none"
             aria-label="LinkedIn"
@@ -369,6 +408,7 @@
             <i class="bi bi-linkedin" style="font-size: 1.5rem"></i>
           </a>
           <a
+            target="_blank"
             href="https://github.com/farhad45203"
             class="text-white mx-2 text-decoration-none"
             aria-label="GitHub"
